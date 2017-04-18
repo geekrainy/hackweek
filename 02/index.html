@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Refresh" content="100;url=https://rainylog.com/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="hackweek, html, css, dom, javascript" >
+    <meta name="description" content="HackWeek 练习">
+    <meta name="author" content="hackweek.rainylog.com">
+    <meta name="revised" content="Rainy,18/4/17">
+    <meta name="generator" content="Webstorm">
+    <title>HackWeek官方网站</title>
+    <link target="_blank" href="./css/style.css" rel="stylesheet">
+    <style>
+        h1 {color: red}
+        p {color: blue}
+    </style>
+    <base target="_blank" />
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <h1>HackWeek: HTML5 基础知识</h1>
+        </div>
+        <h2>（结构标签练习场，样式都是浮云）</h2>
+        <nav>
+            <a href="https://rainylog.com">我的博客</a>
+            <a href="http://hackweek.rainylog.com">HackWeek项目页</a>
+        </nav>
+    </header>
+
+    <section id="carousel">
+        <p>
+            这里作为一个轮播区域啦！
+        </p>
+    </section>
+
+    <section id="content">
+        <article>
+            <h1>HackWeek 第二天练习</h1>
+            <p>这个页面中包含了第二天 HTML5 基础的 w3cschool 联系内容</p>
+        </article>
+        <aside>
+            <h4>这里定义其所处内容之外的内容</h4>
+            <p>应该与附近的内容有联系</p>
+            <div style="color:#00FF00">
+                <h3>div 标签的使用</h3>
+                <p>万能标签，分割结构，无实际语义</p>
+            </div>
+        </aside>
+    </section>
+
+
+    <!-- w3cschool 文件骨架部分示例 -->
+    <section name="html">
+        <h1 align="center">HTML 文件骨架部分示例</h1>
+        <p>body 元素的内容会显示在浏览器中。</p>
+        <p>title 元素的内容会显示在浏览器的标题栏中。</p>
+        <h1>header 1</h1>
+        <p>A paragraph.</p>
+        <h1 class="h1_link_style">我通过外部样式表进行格式化。</h1>
+        <p class="p_link_style">我也一样！</p>
+        <p>本文档的 meta 属性标识了创作者和编辑软件。</p>
+        <p>本文档的 meta 属性描述了该文档和它的关键词。</p>
+
+        <p>
+            对不起。我们已经搬家了。您的 URL 是 <a href="http://www.w3school.com.cn">http://www.w3school.com.cn</a>
+        </p>
+        <p>您将在 100 秒内被重定向到新的地址。</p>
+        <p>如果超过 100 秒后您仍然看到本消息，请点击上面的链接。</p>
+
+        <a href="/example/html/lastpage.html" style="text-decoration:none">
+            这是一个链接！
+        </a>
+    </section>
+    <!-- END w3cschool 文件骨架部分示例 -->
+
+    <section>
+        <h1 align="center">标题、文字、多媒体部分示例</h1>
+        <h2>这是标题 2</h2>
+        <h3>这是标题 3</h3>
+        <h4>这是标题 4</h4>
+        <h5>这是标题 5</h5>
+        <h6>这是标题 6</h6>
+        <p>
+            这个段落
+            在源代码中
+            包含许多行
+            但是浏览器
+            忽略了它们。
+        </p>
+
+        <p>
+            这个段落
+            在源代码       中
+            包含   许多行
+            但是      浏览器
+            忽略了  它们。
+        </p>
+
+        <p>
+            段落的行数依赖于浏览器窗口的大小。如果调节浏览器窗口的大小，将改变段落中的行数。
+        </p>
+
+        <h1>春晓</h1>
+
+        <p>
+            春眠不觉晓，
+            处处闻啼鸟。
+            夜来风雨声，
+            花落知多少。
+        </p>
+
+        <p>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。</p>
+
+        <!-- 一些格式化标签 -->
+        <b>This text is bold</b>
+        <br />
+        <strong>This text is strong</strong>
+        <br />
+        <big>This text is big</big>
+        <br />
+        <em>This text is emphasized</em>
+        <br />
+        <i>This text is italic</i>
+        <br />
+        <small>This text is small</small>
+        <br />
+        This text contains
+        <sub>subscript</sub>
+        <br />
+        This text contains
+        <sup>superscript</sup>
+        <!-- END 一些格式化标签 -->
+
+        <br />
+
+        <!-- 显示代码的一些标签 -->
+        <code>Computer code</code>
+        <br />
+        <kbd>Keyboard input</kbd>
+        <br />
+        <tt>Teletype text</tt>
+        <br />
+        <samp>Sample text</samp>
+        <br />
+        <var>Computer variable</var>
+        <br />
+
+        <p>
+            <b>注释：</b>这些标签常用于显示计算机/编程代码。
+        </p>
+        <!-- END 显示代码的一些标签 -->
+        <p>
+            <span>行内元素</span>
+            <hr>
+        </p>
+
+        <h1>下面是链接的使用示例</h1>
+        <ul>
+            <li><a href="http://hackweek.rainylog.com">本文本</a> 是一个指向本网站中的一个页面的链接。</p></li>
+            <li><a href="/example/html/lastpage.html"><img border="0" src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/img/hackweekbanner.jpg" /></a></li>
+            <li><a href="#html">查看 HTML 结构部分。</a>此处失效，因为定义了新窗口打开的base target</li>
+        </ul>
+
+        <img src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/img/hackweekbanner.jpg" title="HackWeek网页开发" alt="HackWeek图片" width="300px"  >
+        <audio controls="controls" src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/audio/zaowuzhe.mp3"></audio>
+        <video controls="controls" src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/audio/video.mp4" width="300"></video>
+    </section>
+    <section>
+        <h1 align="center">列表部分</h1>
+        <ul>
+            <li>咖啡</li>
+            <li>茶
+                <ul>
+                    <li>红茶</li>
+                    <li>绿茶</li>
+                </ul>
+            </li>
+            <li>牛奶</li>
+        </ul>
+        <ol>
+            <li>洗脸</li>
+            <li>刷牙</li>
+            <li>睡觉</li>
+        </ol>
+    </section>
+    <section>
+        <h1 align="center">表格部分</h1>
+        <div>
+            <!--<table>…</table>：整个表格以<table>标记开始、</table>标记结束。 -->
+            <table>
+                <!--<tbody>…</tbody>标签可以控制表格分行下载，从而提高下载速度，你可以偷懒不写(这不大规范)，但浏览器会自动给你不写 -->
+                <tbody>
+                <!--<tr>…</tr>：表格的一行，所以有几对tr 表格就有几行。 -->
+                <tr>
+                    <!--<th>…</th>：表格的头部的一个单元格，表格表头。 -->
+                    <th>日期</th>
+                    <th>学习内容</th>
+                    <th>固定交流时间</th>
+                </tr>
+                <tr>
+                    <!--<td>…</td>：表格的一个单元格，一行中包含几对<td>...</td>，说明一行中就有几列。 -->
+                    <td>周一</td>
+                    <td>开发环境的搭建</td>
+                    <td>20:30-21:30</td>
+                </tr>
+                <tr>
+                    <td>周二</td>
+                    <td>HTML基础知识</td>
+                    <td>20:30-21:30</td>
+                </tr>
+                <tr>
+                    <td>周三</td>
+                    <td>CSS基础知识</td>
+                    <td>20:30-21:30</td>
+                </tr>
+                <tr>
+                    <td>周四</td>
+                    <td>学习并理解Bootstrap</td>
+                    <td>20:30-21:30</td>
+                </tr>
+                <tr>
+                    <td>周五</td>
+                    <td>引入开源项目</td>
+                    <td>20:30-21:30</td>
+                </tr>
+                <tr>
+                    <td>周六</td>
+                    <td>网页初步设计</td>
+                    <td>20:30-21:30</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h1 align="center">表单部分</h1>
+        <from action="action.php" method="get">
+            姓：<input type="text" name="lname">
+            名：<input type="text" name="fname">
+            职业：
+            <select>
+                <option value ="student">学生</option>
+                <option value ="other">其它</option>
+            </select>
+            <label for="male">男</label>
+            <input type="radio" name="sex" id="male" />
+            <label for="female">女</label>
+            <input type="radio" name="sex" id="female" />
+            <br>
+            <button type="button">提交</button>
+
+        </from>
+    </section>
+    <footer>
+        <!-- w3cschool <footer>标签示例 -->
+        <p>Posted by: Rainy</p>
+        <p>Contact information: <a href="mailto:geekrainy@gmail.com">geekrainy@gmail.com</a>.</p>
+        <!-- END w3cschool <footer>标签示例 -->
+    </footer>
+</body>
+</html>
