@@ -49,7 +49,7 @@ nav li:nth-child(4) a {
     color: #CCC;
 }
 
-main {
+#main {
     width: 100%;
     float: left;
 }
@@ -88,6 +88,7 @@ main {
 .img-list figcaption {
     text-align: center;
     padding-bottom: 10px;
+    font-size: 12px;
 }
 
 .img-list img {
@@ -108,7 +109,7 @@ main {
     color: #666;
 }
 
-aside {
+#sidebar {
     width: 400px;
     float: left;
     margin-left: -400px;
@@ -119,7 +120,7 @@ aside {
     border: 1px solid #CDCDCD;
     padding: 20px;
     margin: 20px 0 20px 20px;
-    box-shadow: 2px 1px #999;
+    box-shadow: 2px 2px #999;
 }
 
 .article table {
@@ -135,7 +136,7 @@ aside {
 }
 
 .article td {
-    border: 1px solid #DDD;
+    border: 1px solid #CCC;
     padding: 5px;
 }
 
@@ -144,16 +145,16 @@ aside {
     font-weight: bold;
 }
 
-aside section {
+#sidebar section {
     font-size: 12px;
     background: #FFF;
     border: 1px solid #CDCDCD;
     padding: 20px;
     margin: 20px;
-    box-shadow: 2px 1px #999;
+    box-shadow: 2px 2px #999;
 }
 
-aside h1 {
+#sidebar h1 {
     font-size: 16px;
     border-left: 3px solid #CDCDCD;
     padding: 10px;
@@ -163,31 +164,103 @@ aside h1 {
     text-align: right;
 }
 
-aside table {
+#sidebar table {
     width: 100%;
 }
 
-aside td {
+#sidebar td {
     padding: 5px;
     vertical-align:text-top;
 }
 
-aside button {
+#sidebar button {
     width: 100%;
     height: 40px;
     color: #FFF;
     background: #3355D0;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
 
-footer {
+#sidebar button:active {
+    background: #26409E;
+}
+
+#footer {
     background: #000;
     width: 100%;
     height: 70px;
     color: #FFF;
     font-size: 12px;
-    font-weight: bold;
     text-align: center;
     line-height: 70px;
+}
+
+/* Media query */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+    .article img {
+        width: 100%;
+    }
+
+    .article .img-list {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo {
+        float: none;
+    }
+
+    .logo img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav {
+        float: none;
+        height: auto;
+    }
+
+    nav li {
+        float: none;
+        text-align: center;
+        line-height: 40px;
+        border-top: 1px solid #444;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        float: none;
+    }
+    .article {
+        margin: 0;
+    }
+
+    .article article {
+        margin: 20px;
+        box-shadow: none;
+    }
+
+    #sidebar {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    #sidebar section {
+        box-shadow: none;
+    }
 }
