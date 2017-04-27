@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.main-nav {
+  height: 44px;
+  border-radius: 0;
+  font-size: 14px;
+}
+.navbar-brand {
+  padding: 0;
+  height: 44px;
+}
+
+.navbar-nav>li>a {
+  padding: 0;
+}
+
+.main-nav .container {
+  width: 980px;
+}
